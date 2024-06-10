@@ -15,7 +15,7 @@ function x(y,n){
         for(let mars of y){
                 if(n=mars){x2++}}
                 return x2
-        }
+        
 
 console.log(x(["na", "na", "na", "na", "BATMAN"], "na"), 4);
 console.log(x(["na", "na", "na", "na", "BATMAN"], "BATMAN"), 1);
