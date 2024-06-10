@@ -12,9 +12,10 @@
 function x(y,n){
         let x2 = (0)
 }
-        for(let mars of (
-        ((
-                y)))){if(((((n=mars))))){x2++}}return(((((x2)))))}
+        for(let mars of y){
+                if(n=mars){x2++}}
+                return x2
+        }
 
 console.log(x(["na", "na", "na", "na", "BATMAN"], "na"), 4);
 console.log(x(["na", "na", "na", "na", "BATMAN"], "BATMAN"), 1);
