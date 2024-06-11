@@ -9,17 +9,17 @@
  * @param {string} n - string to count occurrences off
  * @returns {number} how many occurrences of the string are in the array
  */
-function x(y, n) {
-  let x2 = 0;
-  for (let mars of y) {
-    if ((n = mars)) {
-      x2++;
+function wholeOccurence(stringArr, targetOccurence) {
+  let occurrences = 0;
+  for (let element of stringArr) {
+    if (targetOccurence === element) {
+      occurrences++;
     }
   }
-  return x2;
+  return occurrences;
 }
 
-console.log(x(["na", "na", "na", "na", "BATMAN"], "na"), 4);
-console.log(x(["na", "na", "na", "na", "BATMAN"], "BATMAN"), 1);
-console.log(x(["na", "na", "na", "na", "BATMAN"], "batman"), 0);
-console.log(x(["na", "na", "na", "na", "BATMAN"], "a"), 0);
+console.log(wholeOccurence(["na", "na", "na", "na", "BATMAN"], "na"), 4);
+console.log(wholeOccurence(["na", "na", "na", "na", "BATMAN"], "BATMAN"), 1);
+console.log(wholeOccurence(["na", "na", "na", "na", "BATMAN"], "batman"), 0);
+console.log(wholeOccurence(["na", "na", "na", "na", "BATMAN"], "a"), 0);
